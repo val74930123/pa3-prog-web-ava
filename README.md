@@ -1,16 +1,76 @@
-# React + Vite
+# README — Evaluación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Curso:** PROGRAMACION WEB - II  
+> **Código:** 30690  
+> **Evaluación:** PA3 
+> **Equipo:** GRUPO 5
 
-Currently, two official plugins are available:
+## 1. Integrantes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Integrante | Rol | Aporte principal |
+|---|---|---|
+| Valeria Ravina Pérez | Datos y lógica (Hooks) | Datos simulados, useState, useEffect, filtros y búsqueda (Act 1) |
+| [Nombre 2] | [Rol] | [Aporte] |
+| [Nombre 3] | [Rol] | [Aporte] |
+| [Nombre 4] | [Rol] | [Aporte] |
+| [Nombre 5] | [Rol] | [Aporte] |
 
-## React Compiler
+## 2. Descripción y objetivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Problema:**  
+El equipo debe construir una nueva interfaz de usuario para consultar y organizar solicitudes académicas desde una SPA en React. La interfaz debe reaccionar a cambios de datos y estado utilizando los fundamentos propios de React.
+**Objetivo:**  
+Construir una SPA con React.js que utilice JSX, componentes y los Hooks useState y useEffect, además de navegación con React Router y estado global con Context API y Redux a nivel introductorio.
 
-## Expanding the ESLint configuration
+**Solución desarrollada:**  
+[Explicar brevemente la solución implementada.]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. Cómo ejecutar o revisar
+
+```bash
+git clone https://github.com/val74930123/pa3-prog-web-ava.git
+cd pa3-prog-web-ava
+npm install
+npm run dev
+```
+
+**Pasos de revisión:**
+1. [Paso 1]
+2. [Paso 2]
+3. [Paso 3]
+
+> No publicar contraseñas, tokens, credenciales ni datos sensibles.
+
+## 4. Evidencias
+
+Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funcionamiento.
+
+- [Evidencia 1]
+- [Evidencia 2]
+- [Evidencia 3]
+
+## 5. Matriz de participación
+
+| Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
+|---|---|---|---|---|---|
+| Valeria Ravina Pérez | [Alta] | [Alta] | [Alta] | [Sí] | 
+| [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+
+## 6. Video de exposición
+
+**Video público de YouTube:** [PEGAR AQUÍ EL ENLACE]
+
+Todos los integrantes deben participar en la exposición con sus cámaras prendidas y explicar el procedimiento, la solución desarrollada y las decisiones tomadas.
+
+## 7. Conclusiones
+
+- [Conclusión 1]
+- [Conclusión 2]
+- [Conclusión 3]
+
+---
+
+**Última actualización:** [DD/MM/AAAA]
