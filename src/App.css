@@ -182,3 +182,30 @@
     border-right-color: var(--border);
   }
 }
+
+.menu-principal {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.menu-principal a {
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.boton-principal {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #087f75;
+  color: white;
+  text-decoration: none;
+}
+
+.boton-principal:hover {
+  background: #06665f;
+}
