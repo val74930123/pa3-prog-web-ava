@@ -11,7 +11,7 @@ export default function App() {
 
         <nav className="menu-principal" aria-label="Navegacion principal">
           <NavLink to="/" end  className={({ isActive }) => isActive ? "enlace activo" : "enlace"}>Inicio</NavLink>
-        </nav> 
+        </nav>
       </header>
 
       <Routes>

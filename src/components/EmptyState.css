@@ -1,0 +1,35 @@
+.vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 3rem 1rem;
+  background: var(--color-superficie);
+  border: 2px dashed var(--color-borde);
+  border-radius: var(--radio);
+  color: var(--color-texto-suave);
+}
+
+.vacio__icono {
+  font-size: 2.5rem;
+}
+
+.vacio h3 {
+  color: var(--color-texto);
+}
+
+.vacio button {
+  margin-top: 0.6rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-primario);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vacio button:hover {
+  background: var(--color-primario-oscuro);
+}

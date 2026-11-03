@@ -1,0 +1,54 @@
+.stats {
+  display: grid;
+  /* se adapta solo al número de estados que haya (3, 4, 5...) */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.stats__item {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-left-width: 5px;
+  border-radius: var(--radio);
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--sombra);
+}
+
+.stats__numero {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stats__etiqueta {
+  font-size: 0.82rem;
+  color: var(--color-texto-suave);
+}
+
+.stats__item--total {
+  border-left-color: var(--color-primario);
+}
+
+.stats__item--pendiente {
+  border-left-color: var(--color-pendiente);
+}
+
+.stats__item--revision {
+  border-left-color: var(--color-revision);
+}
+
+.stats__item--aprobada {
+  border-left-color: var(--color-aprobada);
+}
+
+.stats__item--rechazada {
+  border-left-color: var(--color-rechazada);
+}
+
+@media (max-width: 520px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

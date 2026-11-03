@@ -1,0 +1,91 @@
+/* ============================================================
+   Estilos de la vista de solicitudes
+   ------------------------------------------------------------
+   Todo está limitado a la clase .solicitudes para NO chocar con
+   los estilos globales de la plantilla (index.css / App.css).
+   Las variables de diseño viven aquí y las usan los componentes.
+   ============================================================ */
+.solicitudes {
+  /* Colores base */
+  --color-fondo: #f4f6fb;
+  --color-superficie: #ffffff;
+  --color-texto: #1f2937;
+  --color-texto-suave: #6b7280;
+  --color-borde: #e5e7eb;
+  --color-primario: #3b4cca;
+  --color-primario-oscuro: #2d3aa3;
+  --color-primario-claro: #eef0ff;
+
+  /* Colores por estado */
+  --color-pendiente: #b45309;
+  --color-pendiente-fondo: #fef3c7;
+  --color-revision: #1d4ed8;
+  --color-revision-fondo: #dbeafe;
+  --color-aprobada: #047857;
+  --color-aprobada-fondo: #d1fae5;
+  --color-rechazada: #b91c1c;
+  --color-rechazada-fondo: #fee2e2;
+
+  /* Medidas */
+  --radio: 12px;
+  --sombra: 0 1px 3px rgba(17, 24, 39, 0.08), 0 4px 12px rgba(17, 24, 39, 0.05);
+  --sombra-hover: 0 6px 20px rgba(17, 24, 39, 0.12);
+  --ancho-max: 1120px;
+
+  /* Contenedor */
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  /* Se neutralizan estilos heredados de la plantilla (centrado, tamaños, colores) */
+  text-align: left;
+  letter-spacing: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+}
+
+.solicitudes,
+.solicitudes *,
+.solicitudes *::before,
+.solicitudes *::after {
+  box-sizing: border-box;
+}
+
+.solicitudes h2,
+.solicitudes h3,
+.solicitudes p,
+.solicitudes dl,
+.solicitudes dd {
+  margin: 0;
+}
+
+.solicitudes button,
+.solicitudes input,
+.solicitudes select {
+  font: inherit;
+  letter-spacing: normal;
+}
+
+.solicitudes :focus-visible {
+  outline: 3px solid rgba(59, 76, 202, 0.45);
+  outline-offset: 2px;
+}
+
+/* ---------- Encabezado de la sección ---------- */
+.solicitudes__titulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-texto);
+}
+
+.solicitudes__resultados {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}

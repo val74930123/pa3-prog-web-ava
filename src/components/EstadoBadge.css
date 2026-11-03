@@ -1,0 +1,28 @@
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge--pendiente {
+  color: var(--color-pendiente);
+  background: var(--color-pendiente-fondo);
+}
+
+.badge--revision {
+  color: var(--color-revision);
+  background: var(--color-revision-fondo);
+}
+
+.badge--aprobada {
+  color: var(--color-aprobada);
+  background: var(--color-aprobada-fondo);
+}
+
+.badge--rechazada {
+  color: var(--color-rechazada);
+  background: var(--color-rechazada-fondo);
+}
