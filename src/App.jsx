@@ -4,6 +4,7 @@ import SolicitudList from './components/SolicitudList.jsx';
 import './App.css';
 import { SolicitudesProvider } from './context/solicitudesContext';
 import StatsSummary from './components/StatsSummary.jsx';
+import PruebaRedux from './components/PruebaRedux.jsx';
 
 export default function App() {
   return (
@@ -38,6 +39,9 @@ export default function App() {
                 <StatsSummary />
                 <div style={{ marginTop: '2rem' }}>
                   <SolicitudList />
+                </div>
+                <div style={{ marginTop: '2rem' }}>
+                  <PruebaRedux />
                 </div>
               </div>
             } 
