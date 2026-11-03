@@ -1,37 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-
-const DATOS_INICIALES = [
-  {
-    id: 1,
-    codigo: 'EST-2026-001',
-    titulo: 'Cancelación de Matrícula',
-    estudiante: 'Luis Fabian',
-    tipo: 'Tramite',
-    descripcion: 'Cruce de horarios con el trabajo',
-    estado: 'Pendiente',
-    fecha: '2026-04-13'
-  },
-  {
-    id: 2,
-    codigo: 'EST-2026-002',
-    titulo: 'Convalidación de Curso',
-    estudiante: 'Andre Herencia',
-    tipo: 'Tramite',
-    descripcion: 'Certificación universitaria previa',
-    estado: 'Aprobada',
-    fecha: '2026-04-14'
-  },
-  {
-    id: 3,
-    codigo: 'EST-2026-003',
-    titulo: 'Reserva de Matrícula',
-    estudiante: 'Leonardo Rojas',
-    tipo: 'Tramite',
-    descripcion: 'Motivos laborales comprobables',
-    estado: 'Pendiente',
-    fecha: '2026-04-15'
-  }
-];
+import { solicitudes as DATOS_INICIALES } from '../data/solicitudes';
 
 const SolicitudesContext = createContext(null);
 
