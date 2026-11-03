@@ -1,5 +1,6 @@
 import EstadoBadge from './EstadoBadge.jsx'
 import './SolicitudCard.css'
+import { useSolicitudes } from '../context/solicitudesContext';
 
 /**
  * Tarjeta que muestra una solicitud académica.
@@ -19,6 +20,8 @@ function formatearFecha(fechaISO) {
 
 function SolicitudCard({ solicitud }) {
   const { id, titulo, tipo, estudiante, fecha, estado, descripcion } = solicitud
+
+  const { actualizarEstado } = useSolicitudes()
 
   return (
     <article className="card">
@@ -43,6 +46,24 @@ function SolicitudCard({ solicitud }) {
           <dd>{formatearFecha(fecha)}</dd>
         </div>
       </dl>
+        {(estado === 'Pendiente' || estado === 'En revisión') && (
+        <div className="card__acciones" style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
+          <button
+            type="button"
+            className="btn btn--aprobar"
+            onClick={() => actualizarEstado(id, 'Aprobada')}
+          >
+            Aprobar
+          </button>
+          <button
+            type="button"
+            className="btn btn--rechazar"
+            onClick={() => actualizarEstado(id, 'Rechazada')}
+          >
+            Rechazar
+          </button>
+        </div>
+      )}  
     </article>
   )
 }

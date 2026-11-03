@@ -1,4 +1,5 @@
 import './StatsSummary.css'
+import { useSolicitudes } from '../context/solicitudesContext'
 
 /**
  * Resumen con contadores por estado.
@@ -26,18 +27,23 @@ function claseDeEstado(estado) {
   }
 }
 
-function StatsSummary({ solicitudes = [], estados = ESTADOS_POR_DEFECTO }) {
+function StatsSummary({ solicitudes: solicitudesProp, estados = ESTADOS_POR_DEFECTO }) {
+  const context = useSolicitudes()
+
+  // Si vienen solicitudes por props las usa; si no, toma las del estado global
+  const listaSolicitudes = solicitudesProp || context?.solicitudes || []
+
   return (
     <section className="stats" aria-label="Resumen de solicitudes">
       <div className="stats__item stats__item--total">
-        <span className="stats__numero">{solicitudes.length}</span>
+        <span className="stats__numero">{listaSolicitudes.length}</span>
         <span className="stats__etiqueta">Total</span>
       </div>
 
       {estados.map((nombre) => (
         <div key={nombre} className={`stats__item ${claseDeEstado(nombre)}`}>
           <span className="stats__numero">
-            {solicitudes.filter((s) => s.estado === nombre).length}
+            {listaSolicitudes.filter((s) => s?.estado === nombre).length}
           </span>
           <span className="stats__etiqueta">{nombre}</span>
         </div>
