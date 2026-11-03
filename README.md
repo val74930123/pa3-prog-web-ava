@@ -11,8 +11,8 @@
 |---|---|---|
 | Valeria Ravina Pérez | Datos y lógica (Hooks) | Datos simulados, useState, useEffect, filtros y búsqueda (Act 1) |
 | Alejandro Daniel Quispe Nieto | Navegacion entre paginas | Se agrego la pagina de inicio, y se conecto los enlaces para pasar de ella a la lista de solicitudes |
-| [Nombre 3] | [Rol] | [Aporte] |
-| [Nombre 4] | [Rol] | [Aporte] |
+| Rodrigo Arturo Paredes Santa Cruz | Estado global con Context API | Correcto funcionamiento de Context API con Provider, consumers desacoplados |
+| [Nombre 4] |  | [Aporte] |
 <<<<<<< HEAD
 | [Nombre 5] | [Rol] | [Aporte] |
 =======
@@ -67,7 +67,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 |---|---|---|---|---|---|
 | Valeria Ravina Pérez | [Alta] | [Alta] | [Alta] | [Sí] | 
 | Alejandro Daniel Quispe Nieto | [Alta] | [Alta] | [Alta] | [Sí]
-| [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Rodrigo Arturo Paredes Santa Cruz | Alta | Alta| Alta | Sí |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 <<<<<<< HEAD
 | [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
