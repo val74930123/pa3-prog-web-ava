@@ -13,7 +13,11 @@
 | Alejandro Daniel Quispe Nieto | Navegacion entre paginas | Se agrego la pagina de inicio, y se conecto los enlaces para pasar de ella a la lista de solicitudes |
 | [Nombre 3] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
+<<<<<<< HEAD
 | [Nombre 5] | [Rol] | [Aporte] |
+=======
+| Alejandro Josue Chero Izaguirre | Desarrollador de estado global (Redux) | Implementación de Redux, configuración del store y slice y comparación técnica entre Redux y Context API. |
+>>>>>>> origin/main
 
 ## 2. Descripción y objetivo
 
@@ -25,6 +29,14 @@ Construir una SPA con React.js que utilice JSX, componentes y los Hooks useState
 **Solución desarrollada:**  
 [Explicar brevemente la solución implementada.]
 
+<<<<<<< HEAD
+=======
+**Comparación técnica entre Redux y Context API:**
+- **Redux:** Permite administrar el estado global mediante un store centralizado, acciones y reducers. En el proyecto se utilizó Redux Toolkit para almacenar las solicitudes académicas y agregar nuevas solicitudes.
+- **Context API:** Es una funcionalidad de React que permite compartir información entre componentes mediante createContext, Provider y useContext.
+- **Diferencia principal:** Context API permite compartir estados de forma sencilla, mientras que Redux ofrece una estructura más organizada para administrar y actualizar estados globales mediante acciones.
+
+>>>>>>> origin/main
 ## 3. Cómo ejecutar o revisar
 
 ```bash
@@ -57,7 +69,11 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 | Alejandro Daniel Quispe Nieto | [Alta] | [Alta] | [Alta] | [Sí]
 | [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+<<<<<<< HEAD
 | [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+=======
+| Alejandro Josue Chero Izaguirre | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+>>>>>>> origin/main
 
 ## 6. Video de exposición
 
