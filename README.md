@@ -25,6 +25,11 @@ Construir una SPA con React.js que utilice JSX, componentes y los Hooks useState
 **Solución desarrollada:**  
 [Explicar brevemente la solución implementada.]
 
+**Comparación técnica entre Redux y Context API:**
+- **Redux:** Permite administrar el estado global mediante un store centralizado, acciones y reducers. En el proyecto se utilizó Redux Toolkit para almacenar las solicitudes académicas y agregar nuevas solicitudes.
+- **Context API:** Es una funcionalidad de React que permite compartir información entre componentes mediante createContext, Provider y useContext.
+**Diferencia principal:** Context API permite compartir estados de forma sencilla, mientras que Redux ofrece una estructura más organizada para administrar y actualizar estados globales mediante acciones.
+
 ## 3. Cómo ejecutar o revisar
 
 ```bash
