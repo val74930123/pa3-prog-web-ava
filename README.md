@@ -10,7 +10,7 @@
 | Integrante | Rol | Aporte principal |
 |---|---|---|
 | Valeria Ravina Pérez | Datos y lógica (Hooks) | Datos simulados, useState, useEffect, filtros y búsqueda (Act 1) |
-| [Nombre 2] | [Rol] | [Aporte] |
+| Alejandro Daniel Quispe Nieto | Navegacion entre paginas | Se agrego la pagina de inicio, y se conecto los enlaces para pasar de ella a la lista de solicitudes |
 | [Nombre 3] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 | [Nombre 5] | [Rol] | [Aporte] |
@@ -54,7 +54,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
 | Valeria Ravina Pérez | [Alta] | [Alta] | [Alta] | [Sí] | 
-| [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Alejandro Daniel Quispe Nieto | [Alta] | [Alta] | [Alta] | [Sí]
 | [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
@@ -73,4 +73,4 @@ Todos los integrantes deben participar en la exposición con sus cámaras prendi
 
 ---
 
-**Última actualización:** [DD/MM/AAAA]
+**Última actualización:** [02/11/2026]
