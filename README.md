@@ -40,19 +40,22 @@ npm run dev
 ```
 
 **Pasos de revisión:**
-1. [Paso 1]
-2. [Paso 2]
-3. [Paso 3]
+### Requisitos
+- Tener instalado Node.js y npm.
+
+### Instalación y ejecución
+
+```bash
+git clone https://github.com/val74930123/pa3-prog-web-ava.git
+cd pa3-prog-web-ava
+npm install
+npm run dev
 
 > No publicar contraseñas, tokens, credenciales ni datos sensibles.
 
 ## 4. Evidencias
 
-Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funcionamiento.
-
-- [Evidencia 1]
-- [Evidencia 2]
-- [Evidencia 3]
+Agregar capturas reales y legibles en la carpeta evidencias/
 
 ## 5. Matriz de participación
 
