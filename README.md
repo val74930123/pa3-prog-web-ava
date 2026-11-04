@@ -66,7 +66,7 @@ Agregar capturas reales y legibles en la carpeta `evidencias/`.
 | Alejandro Daniel Quispe Nieto | [Alta] | [Alta] | [Alta] | [Sí] |  |
 | Rodrigo Arturo Paredes Santa Cruz | Alta | Alta | Alta | Sí |  |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
-| Alejandro Josue Chero Izaguirre | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Alejandro Josue Chero Izaguirre | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 
 ## 6. Video de exposición
 
