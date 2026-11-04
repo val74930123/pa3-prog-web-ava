@@ -1,9 +1,8 @@
 import { NavLink, Route, Routes } from 'react-router';
 import Inicio from './pages/Inicio.jsx';
-import SolicitudList from './components/SolicitudList.jsx';
+import ListaSolicitudes from './components/ListaSolicitudes.jsx';
 import './App.css';
 import { SolicitudesProvider } from './context/solicitudesContext';
-import StatsSummary from './components/StatsSummary.jsx';
 import PruebaRedux from './components/PruebaRedux.jsx';
 
 export default function App() {
@@ -36,10 +35,7 @@ export default function App() {
             path="/solicitudes" 
             element={
               <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '1rem' }}>
-                <StatsSummary />
-                <div style={{ marginTop: '2rem' }}>
-                  <SolicitudList />
-                </div>
+                <ListaSolicitudes />
                 <div style={{ marginTop: '2rem' }}>
                   <PruebaRedux />
                 </div>

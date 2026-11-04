@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { solicitudes as datosLocales } from '../data/solicitudes.js'
+import { useSolicitudes } from '../context/solicitudesContext'
 import StatsSummary from './StatsSummary.jsx'
 import FilterBar from './FilterBar.jsx'
 import SolicitudList from './SolicitudList.jsx'
@@ -9,25 +9,27 @@ import '../styles/global.css'
 /**
  * Vista de solicitudes (ruta /solicitudes).
  *
- * Aquí se conectan los datos y los Hooks con los componentes visuales:
- *  - useState + useEffect: carga simulada de los datos locales.
+ * Aquí se conectan los Hooks con los componentes visuales y con el Context:
+ *  - Context (estado global): la lista de solicitudes, compartida entre vistas.
+ *  - useState + useEffect: carga simulada de la pantalla.
  *  - useState: filtros de búsqueda, estado y tipo.
  *  - Las solicitudes filtradas se calculan durante el render (no necesitan
  *    estado propio) y se pasan por props a los componentes presentacionales.
  */
 const FILTROS_INICIALES = { busqueda: '', estado: '', tipo: '' }
+const ESTADOS = ['Pendiente', 'Aprobada', 'Rechazada']
 
 export default function ListaSolicitudes() {
-  const [solicitudes, setSolicitudes] = useState([])
+  // Estado global: viene del Context
+  const { solicitudes } = useSolicitudes()
+
+  // Estado local de esta vista
   const [cargando, setCargando] = useState(true)
   const [filtros, setFiltros] = useState(FILTROS_INICIALES)
 
-  // Simula la carga de datos (sin API): useEffect + setTimeout.
+  // Simula el tiempo de carga (sin API): useEffect + setTimeout.
   useEffect(() => {
-    const temporizador = setTimeout(() => {
-      setSolicitudes(datosLocales)
-      setCargando(false)
-    }, 600)
+    const temporizador = setTimeout(() => setCargando(false), 600)
 
     return () => clearTimeout(temporizador)
   }, [])
@@ -45,8 +47,7 @@ export default function ListaSolicitudes() {
     )
   }
 
-  // Opciones de los selects, tomadas de los propios datos.
-  const estados = [...new Set(solicitudes.map((s) => s.estado))]
+  // Opciones del select de tipo, tomadas de los propios datos.
   const tipos = [...new Set(solicitudes.map((s) => s.tipo))]
 
   // Filtrado (búsqueda de texto + estado + tipo).
@@ -68,7 +69,7 @@ export default function ListaSolicitudes() {
     <section className="solicitudes">
       <h2 className="solicitudes__titulo">Solicitudes académicas</h2>
 
-      <StatsSummary solicitudes={solicitudes} estados={estados} />
+      <StatsSummary solicitudes={solicitudes} estados={ESTADOS} />
 
       <FilterBar
         busqueda={filtros.busqueda}
@@ -77,7 +78,7 @@ export default function ListaSolicitudes() {
         onEstadoChange={cambiarFiltro('estado')}
         tipo={filtros.tipo}
         onTipoChange={cambiarFiltro('tipo')}
-        estados={estados}
+        estados={ESTADOS}
         tipos={tipos}
         onLimpiar={limpiarFiltros}
       />
