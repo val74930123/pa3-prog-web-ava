@@ -1,9 +1,11 @@
 import { NavLink, Route, Routes } from 'react-router';
 import Inicio from './pages/Inicio.jsx';
-import ListaSolicitudes from './components/ListaSolicitudes.jsx';
+import Redux from './pages/Redux.jsx';
+import SolicitudList from './components/SolicitudList.jsx';
 import './App.css';
 import { SolicitudesProvider } from './context/solicitudesContext';
-import PruebaRedux from './components/PruebaRedux.jsx';
+import StatsSummary from './components/StatsSummary.jsx';
+import ListaSolicitudes from './components/ListaSolicitudes.jsx';
 
 export default function App() {
   return (
@@ -19,11 +21,19 @@ export default function App() {
           >
             Inicio
           </NavLink>
+          
           <NavLink 
             to="/solicitudes" 
             className={({ isActive }) => (isActive ? "enlace activo" : "enlace")}
           >
             Solicitudes
+          </NavLink>
+          
+          <NavLink
+            to="/redux"
+            className={({ isActive }) => (isActive ? "enlace activo" : "enlace")}
+          >
+            Redux
           </NavLink>
         </nav>
       </header>
@@ -36,12 +46,12 @@ export default function App() {
             element={
               <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '1rem' }}>
                 <ListaSolicitudes />
-                <div style={{ marginTop: '2rem' }}>
-                  <PruebaRedux />
-                </div>
               </div>
             } 
           />
+
+          <Route path="/redux" element={<Redux />} />
+
           <Route path="*" element={<p>Página no encontrada</p>} />
         </Routes>
       </main>
