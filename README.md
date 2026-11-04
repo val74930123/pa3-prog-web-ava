@@ -23,7 +23,11 @@ El equipo debe construir una nueva interfaz de usuario para consultar y organiza
 Construir una SPA con React.js que utilice JSX, componentes y los Hooks useState y useEffect, además de navegación con React Router y estado global con Context API y Redux a nivel introductorio.
 
 **Solución desarrollada:**  
-[Explicar brevemente la solución implementada.]
+Se desarrolló una SPA con React (Vite) para la **Plataforma de Gestión de Solicitudes Académicas**. Se trabajó con datos locales simulados (sin consumo de APIs, que corresponde a la sesión 11). La aplicación se construyó en cuatro etapas sobre el mismo proyecto:
+Los datos simulados están en `src/data/solicitudes.js`. La vista `ListaSolicitudes` usa `useState` para controlar el estado de carga y los filtros de búsqueda, estado y tipo, y `useEffect` para simular la carga al abrir la pantalla. Las solicitudes filtradas se calculan en cada render y se pasan por props a componentes reutilizables: `StatsSummary`, `FilterBar`, `SolicitudList`, `SolicitudCard`, `EstadoBadge`, `LoadingState` y `EmptyState`.
+Se configuraron las rutas `/` (inicio), `/solicitudes`, `/redux` y una ruta de página no encontrada, con un menú de navegación (`NavLink`) que permite moverse entre vistas sin recargar la página.
+Se creó `SolicitudesProvider`, que envuelve la aplicación y guarda de forma global la lista de solicitudes, los contadores por estado y las funciones para registrar una solicitud y cambiar su estado (aprobar o rechazar). Los componentes consumen estos datos con el hook `useSolicitudes`.
+Se implementó un flujo básico con Redux Toolkit (store y slice) sobre una necesidad acotada del caso, y se documentó una comparación técnica con Context API.
 
 **Comparación técnica entre Redux y Context API:**
 - **Redux:** Permite administrar el estado global mediante un store centralizado, acciones y reducers. En el proyecto se utilizó Redux Toolkit para almacenar las solicitudes académicas y agregar nuevas solicitudes.
