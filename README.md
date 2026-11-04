@@ -12,7 +12,7 @@
 | Valeria Ravina Pérez | Datos y lógica (Hooks) | Datos simulados, useState, useEffect, filtros y búsqueda (Act 1) |
 | Alejandro Daniel Quispe Nieto | Navegacion entre paginas | Se agrego la pagina de inicio, y se conecto los enlaces para pasar de ella a la lista de solicitudes |
 | Rodrigo Arturo Paredes Santa Cruz | Estado global con Context API | Correcto funcionamiento de Context API con Provider, consumers desacoplados |
-| [Ian Palmieri Gonzaga] |  | [Actividad 1 parte 2 Componentes y JSX] |
+| [Ian Palmieri Gonzaga] | | Componentes | | [Actividad 1 parte 2 Componentes y JSX] |
 | Alejandro Josue Chero Izaguirre | Desarrollador de estado global (Redux) | Implementación de Redux, configuración del store y slice y comparación técnica entre Redux y Context API. |
 
 ## 2. Descripción y objetivo
